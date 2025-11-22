@@ -1,4 +1,3 @@
-````markdown
 # 🚀 End-to-End Kubernetes Task Manager Project
 
 This project demonstrates a **Full Stack Microservices Application** deployed on **Kubernetes (Minikube)** using **Helm Charts** for automation.
@@ -39,9 +38,6 @@ k8s-task-manager/
 │   ├── Chart.yaml        # Chart Metadata
 │   └── values.yaml       # Control Panel (Variables)
 └── README.md             # Documentation
-````
-
------
 
 ## 🚀 Quick Start Guide
 
