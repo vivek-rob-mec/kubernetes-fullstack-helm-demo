@@ -31,7 +31,7 @@ Before running this project, ensure you have the following installed:
 
 ## 📂 Project Structure
 
-
+```text
 k8s-task-manager/
 ├── task-app-chart/       # The Helm Chart (Automation Logic)
 │   ├── templates/        # Dynamic YAML Manifests
