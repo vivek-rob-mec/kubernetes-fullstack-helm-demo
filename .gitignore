@@ -1,0 +1,15 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+
+# Helm specific
+*.tgz
+*.lock
+_helpers.tpl
+
+# Scripts 
+get_helm.sh

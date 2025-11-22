@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-frontend
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: frontend-ui
+  template:
+    metadata:
+      labels:
+        app: frontend-ui
+    spec:
+      containers:
+      - name: web
+        image: {{ .Values.frontend.image }} # for visual change
+        ports:
+        - containerPort: 80
+
+# frontend service
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend-service
+spec:
+  selector:
+    app: frontend-ui
+  ports:
+  - port: 80 # service port
+    targetPort: 80 # container port
+  type: ClusterIP

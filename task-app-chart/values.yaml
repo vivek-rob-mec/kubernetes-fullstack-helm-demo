@@ -1,0 +1,16 @@
+# global setting
+replicaCount: 2
+
+# frontend setting
+frontend:
+  image: httpd:alpine
+  servicePort: 80
+
+# backend setting
+backend:
+  image: nginx:alpine
+  servicePort: 80
+
+# database setting
+database:
+  storageSize: 1Gi

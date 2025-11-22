@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: app-secrets
+type: Opaque
+data:
+  # password is "password123"
+  MONGO_PASS: cGFzc3dvcmQxMjM=
+  # URI: 'mongodb://admin:password123@mongo-service:27017'
+  MONGO_URI: bW9uZ29kYjovL2FkbWluOnBhc3N3b3JkMTIzQG1vbmdvLXNlcnZpY2U6MjcwMTc=
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  ENV_MODE: "production"
